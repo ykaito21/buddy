@@ -10,8 +10,13 @@
   justify-content: space-between;
 }
 
+a:hover {
+  text-decoration: none;
+}
+
 /* Logo */
-.navbar-wagon-brand img {
+.navbar-wagon-brand h1 {
+  font-family: $logo-font;
   height: 50px;
 }
 
