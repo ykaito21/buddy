@@ -1,16 +1,192 @@
 <!-- banner -->
-  <div class="banner">
-    <div class="banner-content text-center">
-      <h1>Change your life with Buddy!</h1>
-      <p>BuddyBuddy brings new community to your family</p>
-      <%= link_to "Become A Buddy", new_user_registration_path, class: "btn btn-red"  %>
+<%= render 'header' %>
+
+<!-- about -->
+<section class="buddy-about">
+  <div class="container">
+    <div class="row">
+      <div>
+        <h3>About Buddy</h3>
+        <hr>
+          <p>
+            Sed ut iis bonis erigimur, quae expectamus, sic laetamur iis, quae recordamur. Qui non moveatur et offensione turpitudinis et comprobatione honestatis? Mihi enim satis est, ipsis non satis. Ita ne hoc quidem modo paria peccata sunt. Rapior illuc, revocat autem Antiochus, nec est praeterea, quem audiamus. Causa autem fuit huc veniendi ut quosdam hinc libros promerem. Quasi vero, inquit, perpetua oratio rhetorum solum, non etiam philosophorum sit. Non est ista, inquam, Piso, magna dissensio.
+          </p>
+      </div>
     </div>
   </div>
+</section>
 
-  <!-- intro -->
-  <div class="intro">
-
+<!-- service -->
+<section class="buddy-service">
+  <div class="container">
+    <div class="row">
+      <div class>
+        <h3>How it works</h3>
+        <hr>
+      </div>
+    </div>
   </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-3 col-md-6">
+        <div>
+          <i class="fas fa-4x fa-search"></i>
+          <h2>Discover</h2>
+          <p>Search buddies by profile, location, and category.</p>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6">
+        <div>
+          <i class="fas fa-4x fa-comments"></i>
+          <h2>Request</h2>
+          <p>Chat with your buddy and ask a request!</p>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6">
+        <div>
+          <i class="fas fa-4x fa-calendar-alt"></i>
+          <h2>Book</h2>
+          <p>Find times that work best and book instantly.</p>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6">
+        <div>
+          <i class="fas fa-4x fa-heart"></i>
+          <h2>Experience</h2>
+          <p>Show your Buddy confirmation, learn and play with your best buddy!</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
-  <!-- footer -->
-  <%= render 'footer' %>
+
+
+<!-- price -->
+<section class="buddy-price">
+  <div class="container">
+    <div class="row">
+      <div class>
+        <h3>Price</h3>
+        <hr>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12 col-sm-4 col-sm-offset-4">
+        <div class="price-box">
+          <h2>Monthly Price</h2>
+          <p>$0</p>
+          <h2>Each Price</h2>
+          <p>$10 - </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- buddy -->
+<section class="buddy">
+  <div class="container">
+    <div class="row">
+      <div class>
+        <h3>Buddies</h3>
+        <hr>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12 col-sm-4">
+        <div class="card" id="first-buddy">
+          <div class="card-category">Popular</div>
+          <a class="card-link" href="#" ></a>
+        </div>
+        <h2>Brook san</h2>
+      </div>
+      <div class="col-xs-12 col-sm-4">
+        <div class="card" id="second-buddy">
+          <div class="card-category">Popular</div>
+          <a class="card-link" href="#" ></a>
+        </div>
+        <h2>Ema san</h2>
+      </div>
+      <div class="col-xs-12 col-sm-4">
+        <div class="card" id="third-buddy">
+          <div class="card-category">Popular</div>
+          <a class="card-link" href="#" ></a>
+        </div>
+        <h2>Catherine san</h2>
+      </div>
+    </div>
+    <h2>+1,000 buddies & +3000 users are alredy registered!</h2>
+    <h2>65 buddies are available today!</h2>
+    <%= link_to "Find Buddy!", new_user_registration_path, class: "btn btn-red"  %>
+  </div>
+</section>
+
+
+<!-- news -->
+<section class="buddy-press">
+  <div class="container">
+    <div class="row">
+      <div class>
+        <h3>Press</h3>
+        <hr>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12 text-center">
+        <div>
+          <h2><a href="#">TechCrunch</a></h2>
+          <h2><a href="#">CNN</a></h2>
+          <h2><a href="#">THE WALL STREET JOURNAL.</a></h2>
+          <h2><a href="#">lifehacker</a></h2>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+<!-- community -->
+<section class="buddy-community">
+  <div class="container">
+    <div class="row">
+      <div class>
+        <h3>Community</h3>
+        <hr>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-4 col-md-6 text-center">
+        <div>
+          <%= image_tag("first.jpg", class: "community-img") %>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 text-center">
+        <div>
+          <%= image_tag("second.jpg", class: "community-img") %>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 text-center">
+        <div>
+          <%= image_tag("third.jpg", class: "community-img") %>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- footer -->
+<%= render 'footer' %>
