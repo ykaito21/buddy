@@ -1,0 +1,38 @@
+<div class="form-container">
+  <%= simple_form_for(@user_profile) do |f| %>
+    <%= f.label :first_name_kanji %>
+    <%= f.text_field :first_name_kanji, class: "form-control" %>
+
+
+    <%= f.label :phone_number %>
+    <%= f.text_field :phone_number, class: "form-control" %>
+
+    <%= f.submit "submit", class: "btn btn-primary" %>
+  <% end %>
+</div>
+
+
+<!--
+      :first_name_kanji,
+      :last_name_kanji,
+      :first_name_kana,
+      :last_name_kana,
+      :gender,
+      :dob,
+      :phone_number,
+      :u_image_url,
+      :postal_code,
+      :state_kanji,
+      :state_kana,
+      :city_kanji,
+      :city_kana,
+      :town_kanji,
+      :town_kana,
+      :line1_kanji,
+      :line1_kana,
+      :line2_kanji,
+      :line2_kana,
+      :verification_document,
+      :account_id,
+      :tos
+ -->
