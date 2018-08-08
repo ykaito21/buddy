@@ -1,38 +1,29 @@
 <div class="form-container">
   <%= simple_form_for(@user_profile) do |f| %>
-    <%= f.label :first_name_kanji %>
-    <%= f.text_field :first_name_kanji, class: "form-control" %>
 
+    <%= f.input :first_name_kanji %>
+    <%= f.input :last_name_kanji %>
+    <%= f.input :first_name_kana %>
+    <%= f.input :last_name_kana %>
+    <%= f.input :gender, as: :radio_buttons, collection: UserProfile::GENDER %>
+    <%= f.input :dob %>
+    <%= f.input :phone_number %>
+    <%= f.input :u_image_url %>
+    <%= f.input :postal_code %>
+    <%= f.input :state_kanji %>
+    <%= f.input :state_kana %>
+    <%= f.input :city_kanji %>
+    <%= f.input :city_kana %>
+    <%= f.input :town_kanji %>
+    <%= f.input :town_kana %>
+    <%= f.input :line1_kanji %>
+    <%= f.input :line1_kana %>
+    <%= f.input :line2_kanji %>
+    <%= f.input :line2_kana %>
+    <%= f.input :verification_document %>
+    <%= f.input :tos %>
 
-    <%= f.label :phone_number %>
-    <%= f.text_field :phone_number, class: "form-control" %>
 
     <%= f.submit "submit", class: "btn btn-primary" %>
   <% end %>
 </div>
-
-
-<!--
-      :first_name_kanji,
-      :last_name_kanji,
-      :first_name_kana,
-      :last_name_kana,
-      :gender,
-      :dob,
-      :phone_number,
-      :u_image_url,
-      :postal_code,
-      :state_kanji,
-      :state_kana,
-      :city_kanji,
-      :city_kana,
-      :town_kanji,
-      :town_kana,
-      :line1_kanji,
-      :line1_kana,
-      :line2_kanji,
-      :line2_kana,
-      :verification_document,
-      :account_id,
-      :tos
- -->
