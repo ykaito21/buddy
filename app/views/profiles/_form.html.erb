@@ -1,14 +1,15 @@
 <div class="form-container">
-  <%= simple_form_for(@user_profile) do |f| %>
+  <%= simple_form_for(@profile) do |f| %>
 
     <%= f.input :first_name_kanji %>
     <%= f.input :last_name_kanji %>
     <%= f.input :first_name_kana %>
     <%= f.input :last_name_kana %>
-    <%= f.input :gender, as: :radio_buttons, collection: UserProfile::GENDER %>
+    <%#= f.input :gender, as: :radio_buttons, collection: Profile::GENDER %>
     <%= f.input :dob %>
     <%= f.input :phone_number %>
-    <%= f.input :u_image_url %>
+    <%= f.input :profile_image %>
+    <%= f.input :profile_image, as: :hidden %>
     <%= f.input :postal_code %>
     <%= f.input :state_kanji %>
     <%= f.input :state_kana %>
@@ -21,6 +22,7 @@
     <%= f.input :line2_kanji %>
     <%= f.input :line2_kana %>
     <%= f.input :verification_document %>
+    <%= f.input :verification_document, as: :hidden %>
     <%= f.input :tos %>
 
 

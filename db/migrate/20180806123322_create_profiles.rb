@@ -1,6 +1,6 @@
-class CreateUserProfiles < ActiveRecord::Migration[5.2]
+class CreateProfiles < ActiveRecord::Migration[5.2]
   def change
-    create_table :user_profiles do |t|
+    create_table :profiles do |t|
       t.string :first_name_kanji
       t.string :last_name_kanji
       t.string :first_name_kana
@@ -8,7 +8,7 @@ class CreateUserProfiles < ActiveRecord::Migration[5.2]
       t.string :gender
       t.date :dob
       t.string :phone_number
-      t.string :u_image_url
+      t.string :profile_image
       t.string :postal_code
       t.string :state_kanji
       t.string :state_kana

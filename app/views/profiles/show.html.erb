@@ -1,0 +1,6 @@
+
+
+<%= image_tag @profile.profile_image.url(:bright_face) %>
+
+
+<%= link_to 'Delete', profile_path(@profile), class: "", method: :delete, data: { confirm: "Are you sure?" }  %>

@@ -15,7 +15,7 @@ ActiveRecord::Schema.define(version: 2018_08_06_123322) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
-  create_table "user_profiles", force: :cascade do |t|
+  create_table "profiles", force: :cascade do |t|
     t.string "first_name_kanji"
     t.string "last_name_kanji"
     t.string "first_name_kana"
@@ -23,7 +23,7 @@ ActiveRecord::Schema.define(version: 2018_08_06_123322) do
     t.string "gender"
     t.date "dob"
     t.string "phone_number"
-    t.string "u_image_url"
+    t.string "profile_image"
     t.string "postal_code"
     t.string "state_kanji"
     t.string "state_kana"
@@ -41,7 +41,7 @@ ActiveRecord::Schema.define(version: 2018_08_06_123322) do
     t.bigint "user_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.index ["user_id"], name: "index_user_profiles_on_user_id"
+    t.index ["user_id"], name: "index_profiles_on_user_id"
   end
 
   create_table "users", force: :cascade do |t|
@@ -61,5 +61,5 @@ ActiveRecord::Schema.define(version: 2018_08_06_123322) do
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
 
-  add_foreign_key "user_profiles", "users"
+  add_foreign_key "profiles", "users"
 end
