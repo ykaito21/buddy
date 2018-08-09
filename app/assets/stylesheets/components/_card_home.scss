@@ -9,15 +9,15 @@
 }
 
 #first-buddy {
-  background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url("first-buddy.jpg");
+  background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url("cl_image_path('third-buddy')");
 }
 
 #second-buddy {
-  background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url("second-buddy.jpg");
+  background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url("cl_image_path('third-buddy')");
 }
 
 #third-buddy {
-  background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url("third-buddy.jpg");
+  background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url("cl_image_path('third-buddy')");
 }
 
 .card-category {
