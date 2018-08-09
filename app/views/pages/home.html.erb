@@ -104,21 +104,24 @@
   <div class="container">
     <div class="row">
       <div class="col-xs-12 col-sm-4">
-        <div class="card" id="first-buddy">
+        <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('<%= cl_image_path("first-buddy",
+      width: 400, height: 300, crop: :fill) %>');">
           <div class="card-category">Popular</div>
           <a class="card-link" href="#" ></a>
         </div>
         <h2>Brook san</h2>
       </div>
       <div class="col-xs-12 col-sm-4">
-        <div class="card" id="second-buddy">
+        <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('<%= cl_image_path("second-buddy",
+      width: 400, height: 300, crop: :fill) %>');">
           <div class="card-category">Popular</div>
           <a class="card-link" href="#" ></a>
         </div>
         <h2>Ema san</h2>
       </div>
       <div class="col-xs-12 col-sm-4">
-        <div class="card" id="third-buddy">
+        <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('<%= cl_image_path("third-buddy",
+      width: 400, height: 300, crop: :fill) %>');">
           <div class="card-category">Popular</div>
           <a class="card-link" href="#" ></a>
         </div>
@@ -170,17 +173,20 @@
     <div class="row">
       <div class="col-lg-4 col-md-6 text-center">
         <div>
-          <%= image_tag("first.jpg", class: "community-img") %>
+          <%= cl_image_tag("first",
+      width: 400, height: 300, crop: :fill, class: "community-img") %>
         </div>
       </div>
       <div class="col-lg-4 col-md-6 text-center">
         <div>
-          <%= image_tag("second.jpg", class: "community-img") %>
+          <%= cl_image_tag("second",
+      width: 400, height: 300, crop: :fill, class: "community-img") %>
         </div>
       </div>
       <div class="col-lg-4 col-md-6 text-center">
         <div>
-          <%= image_tag("third.jpg", class: "community-img") %>
+          <%= cl_image_tag("third",
+      width: 400, height: 300, crop: :fill, class: "community-img") %>
         </div>
       </div>
     </div>
